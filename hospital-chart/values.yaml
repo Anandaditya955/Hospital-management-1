@@ -2,7 +2,7 @@
 
 app:
   image:
-    repository: nanineelapu/hospital-app   # <<< change this
+    repository: 16akash/hospital-management:v1 
     tag: "1.0.0"
   replicas: 2
   containerPort: 5000
@@ -16,10 +16,10 @@ config:
   NODE_ENV: "production"
 
 secret:
-  SESSION_SECRET: "CHANGE-ME-session-secret"
-  JWT_SECRET: "CHANGE-ME-jwt-secret"
+  SESSION_SECRET: "hospital-session-2026@secure123"
+  JWT_SECRET: "jwt-hospital-aks-98765"
   ADMIN_USERNAME: "admin"
-  ADMIN_PASSWORD: "CHANGE-ME-strong-password"
+  ADMIN_PASSWORD: "admin123"
 
 mongodb:
   image: "mongo:7-jammy"
